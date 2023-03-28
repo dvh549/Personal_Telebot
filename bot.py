@@ -83,5 +83,5 @@ def process_query(message):
     bot.reply_to(message, answer, parse_mode="HTML")
 
 if __name__ == "__main__":
-    df = pd.read_csv("Q&A.csv", encoding = "utf-8")
+    df = pd.read_csv("<insert path to CSV file here>", encoding = "utf-8", engine="pyarrow")
     bot.infinity_polling()
